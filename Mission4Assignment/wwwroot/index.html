@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Grade Calculator - Mission 4</title>
+    <link href="css/StyleSheet.css" rel="stylesheet" />
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+</head>
+<body>
+    <!-- Header with my preferred name -->
+    <header>Cole Hardy</header>
+    <br />
+
+    <!-- Picture of what I enjoy doing-->
+    <h3>Here is a picture of me doing something I enjoy, traveling</h3>
+    <img src="img/StarbaseProfile.png" />
+
+    <br />
+
+    <!-- Paragraph of what I hope to get out of IS413-->
+
+    <p>
+        I hope that by taking IS413 I can gain more knowledge and experiance about strictly typed programming along with being able to further my skills in web development.
+        While learning more about the specific topics in IS413 is a really good thing it also important to get better at learning how to learn so that I can succeed in my future
+        classes and jobs more.
+    </p>
+    
+    <br />
+    <!-- Ordered list of top 3 jobs-->
+    <ol>
+        <li>Software Development for a rocket/aerospace company</li>
+        <li>Software Development for a car company</li>
+        <li>Data Analytics for a racing team</li>
+    </ol>
+
+    <br />
+
+    <!-- Form that calculates the grade from the inputted scores and weights-->
+
+    <form>
+        <label>Assignments - 53%</label>
+        <input id="assignments" /> <br />
+
+        <label>Quizzes - 8.60%</label>
+        <input id="quizzes" /> <br />
+
+        <label>Group Projects - 5.38%</label>
+        <input id="groupProjects" /> <br />
+
+        <label>INTEX - 10.75%</label>
+        <input id="intex" /> <br />
+
+        <label>Exams - 21.51%</label>
+        <input id="exams" /> <br />
+
+        <label>Extra Credit - 0%</label>
+        <input id="extraCredit" /> <br />
+
+        <input id="btnSend" type="button" value="Calculate Grade" />
+    </form>
+
+    <h1>Letter Grade = JAVASCRIPTOUTPUT</h1>
+
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="lib/jquery/jquery-3.6.3.min.js"></script>
+    <script src="js/gradeForm.js"></script>
+</body>
+</html>

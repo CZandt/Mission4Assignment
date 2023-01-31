@@ -1,0 +1,13 @@
+﻿body {
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+
+}
+
+label {
+    font-size: 30px;
+
+    width: 100px;
+
+    display: inline-block;
+}
