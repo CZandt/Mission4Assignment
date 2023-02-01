@@ -1,11 +1,6 @@
-﻿// document.getElementById("calculateGrade").addEventListener("click", function () {
-    // alert("TEST TEST TEST");
-// })
-
-
-$('#calculateGrade').click(function () {
+﻿$('#calculateGrade').click(function () {
     
-
+    // Grabs the values from the from
     let assignments = parseFloat($('#assignments').val());
 
     let quizzes = parseFloat($('#quizzes').val());
@@ -17,11 +12,12 @@ $('#calculateGrade').click(function () {
     let exam = parseFloat($('#exams').val());
 
     let finalGrade;
-
+    // performs the math and gets the final grade
     finalGrade = ((assignments * 0.5) + (quizzes * 0.1) + (groupProjects * 0.1) + (intex * 0.1) + (exam * 0.2)) * 100;
 
     let letterGrade;
 
+    // determines what letter grade a person gets based on the 
     if (finalGrade >= 94) {
         letterGrade = "A";
     } else if (finalGrade >= 90) {
@@ -48,5 +44,6 @@ $('#calculateGrade').click(function () {
         letterGrade = "E";
     }
 
+    // displays the final grade in the HTML
     $('#finalGrade').html(letterGrade);
 })
