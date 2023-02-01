@@ -1,10 +1,24 @@
-﻿$('#btnSend').click(function () {
-    var assignmentGrade = Number($("#assignments").val());
-    var quizGrade = Number($("#quizzes").val());
-    var groupGrade = Number($("#groupProjects").val());
-    var intexGrade = Number($("#intex").val());
-    var examGrade = Number($("#exam").val());
-    var ecGrade = Number($("$extraCredit").val());
+﻿$(document).ready(function () {
+
+    $('#calculateGrade').click(function () {
+        alert("SO HELP ME GOD");
+    })
+
+})
+
+$("#testButton").click(function () {
+
+    alert("HELP" + $("#testtest").val())
+
+})
+
+$("#btnSend2").click(function () {
+    var assignmentGrade = $("#assignments").val();
+    var quizGrade = $("#quizzes").val();
+    var groupGrade = $("#groupProjects").val();
+    var intexGrade = $("#intex").val();
+    var examGrade = $("#exam").val();
+    var ecGrade = $("$extraCredit").val();
 
     var assignmentWeight = 0.53;
     var quizWeight = 0.0860;
@@ -56,5 +70,5 @@
         letterGrade = 'E';
     }
 
-    alert(finalGrade + "| LETTER " + letterGrade);
+    alert("TEST ALERT:" + assignmentGrade);
 })
