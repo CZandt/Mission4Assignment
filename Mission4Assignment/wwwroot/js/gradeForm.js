@@ -1,12 +1,9 @@
-﻿$(document).ready(function () {
-
-    $('#calculateGrade').click(function () {
-        alert("SO HELP ME GOD");
-    })
-
+﻿document.getElementById("submitButton").addEventListener("click", function () {
+    alert("TEST TEST TEST");
 })
 
-$("#testButton").click(function () {
+
+$("#testButton2").click(function () {
 
     alert("HELP" + $("#testtest").val())
 
@@ -72,3 +69,4 @@ $("#btnSend2").click(function () {
 
     alert("TEST ALERT:" + assignmentGrade);
 })
+

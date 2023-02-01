@@ -3,9 +3,11 @@
 <head>
     <meta charset="utf-8" />
     <title>Grade Calculator - Mission 4</title>
-    <link href="css/StyleSheet.css" rel="stylesheet" />
-    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-    
+    <link href="css/Styles.css" rel="stylesheet" />
+
+    <link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
+
+    <link rel="icon" type="image/x-icon" href="/img/200-2009388_survey-corps-scout-regiment-scout-legion-attack-on.png" />
 
 </head>
 <body>
@@ -26,7 +28,7 @@
         While learning more about the specific topics in IS413 is a really good thing it also important to get better at learning how to learn so that I can succeed in my future
         classes and jobs more.
     </p>
-    
+
     <br />
     <!-- Ordered list of top 3 jobs-->
     <ol>
@@ -38,44 +40,50 @@
     <br />
 
     <!-- Form that calculates the grade from the inputted scores and weights-->
+    <h2>Grade Calculator v2</h2>
 
-
-    <!-- 
     <form>
-        <label>Assignments - 53%</label>
+        <label>Assignments - 50%</label>
         <input id="assignments" /> <br />
 
-        <label>Quizzes - 8.60%</label>
+        <label>Quizzes - 10%</label>
         <input id="quizzes" /> <br />
 
-        <label>Group Projects - 5.38%</label>
+        <label>Group Projects - 10%</label>
         <input id="groupProjects" /> <br />
 
-        <label>INTEX - 10.75%</label>
+        <label>INTEX - 10%</label>
         <input id="intex" /> <br />
 
-        <label>Exams - 21.51%</label>
+        <label>Exams (Midterm and Final) - 20%</label>
         <input id="exams" /> <br />
-
-        <label>Extra Credit - 0%</label>
-        <input id="extraCredit" /> <br />
 
         <input id="calculateGrade" type="button" value="Calculate Grade" />
     </form>
-    -->
 
-    <form>
-
-        <label> TESSST </label>
-        <input id="testtest" />
-
-        <br />
-
-        <input id="testButton" type="button" value="TEST BUTTON" />
-    </form>
-    <h1>Letter Grade = JAVASCRIPTOUTPUT</h1>
+    <h2>FINAL GRADE:</h2>
+    <h4 id="finalGrade"></h4>
 
     <script src="lib/jquery/jquery-3.6.3.min.js"></script>
-    <script src="js/gradeForm.js"></script>
+    <script src="js/m4JS.js"></script>
+
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-8 col-sm-12">
+                    <h6 class="text-uppercase font-weight-bold">Additional Information</h6>
+                    <p>I have never used javascript before this so it was a really interesting learning experiance</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                <h6 class="text-uppercase font-weight-bold">Contact</h6>
+                <p>Bellevue, WA
+                <br/>IG: c.vzh
+                <br/>123-456-7890</p>
+            </div>
+        </div>
+        <div class="footer-copyright text-center">© 2023 Copyright: ISISCOOL.com</div>
+    </footer>
 </body>
 </html>
