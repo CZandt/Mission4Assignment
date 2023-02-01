@@ -18,7 +18,7 @@
     let letterGrade;
 
     // determines what letter grade a person gets based on the final grade variable
-
+    // Mission 5 Changes
     if (finalGrade >= 94) {
         letterGrade = "A";
     } else if (finalGrade >= 90) {
