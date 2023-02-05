@@ -10,25 +10,34 @@ using System.Threading.Tasks;
 
 namespace Mission4Assignment
 {
-    public class Startup
-    {
+    public class Startup {
         // This method gets called by the runtime. Use this method to add services to the container.
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
-        public void ConfigureServices(IServiceCollection services)
-        {
+        public void ConfigureServices(IServiceCollection services) {
+            services.AddControllersWithViews();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
-        {
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env) {
+
+            if (env.IsEnvironment("Development")) {
+                app.UseDeveloperExceptionPage(); //Only shows the debug screens if in the development enviorments
+            }
 
             // Allows for the website to use files based off of the name and what folder they are located in
 
-            app.UseDefaultFiles();
 
-            // Allows for the website to use static html resources instead of only dynamically generated ones
             app.UseStaticFiles();
+            // Change configure to make use of MVC Model
+            // Enables routing through the controller Blah and using the action of Index
+            app.UseRouting();
 
+            app.UseEndpoints(endpoints => {
+                endpoints.MapControllerRoute(
+                    name: "default",
+                    pattern: "{controller=Blah}/{action=Index}/{id?}"
+                    );
+            });
 
         }
     }

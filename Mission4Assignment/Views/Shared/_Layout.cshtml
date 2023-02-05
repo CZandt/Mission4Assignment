@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"]</title>
+    <link href="css/Styles.css" rel="stylesheet" />
+    <link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="/img/200-2009388_survey-corps-scout-regiment-scout-legion-attack-on.png" />
+</head>
+<body>
+    <nav>
+        <a asp-controller="Blah" asp-action="Index">Home</a>
+        <a asp-controller="Blah" asp-action="gradeCalc">Grade Calculator</a>
+    </nav>
+    <div>
+        @RenderBody()
+    </div>
+
+    <!--Scripts-->
+    <script src="lib/jquery/jquery-3.6.3.min.js"></script>
+    <script src="js/m4JS.js"></script>
+</body>
+</html>

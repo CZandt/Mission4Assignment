@@ -1,0 +1,35 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Mission 5 Grade Calculator";
+}
+
+<h2>Grade Calculator v2</h2>
+<h4>Please input in decimal form (Ex: 0.86)</h4>
+
+<form>
+    <label>Assignments - 50%</label>
+    <input id="assignments" /> <br />
+
+    <label>Quizzes - 10%</label>
+    <input id="quizzes" /> <br />
+
+    <label>Group Projects - 10%</label>
+    <input id="groupProjects" /> <br />
+
+    <label>INTEX - 10%</label>
+    <input id="intex" /> <br />
+
+    <label>Exams (Midterm and Final) - 20%</label>
+    <input id="exams" /> <br />
+
+    <input id="calculateGrade" type="button" value="Calculate Grade" />
+</form>
+
+<!-- Shows the final grade in the html-->
+<h2>FINAL GRADE:</h2>
+<h4 id="finalGrade"></h4>
+
+<script src="lib/jquery/jquery-3.6.3.min.js"></script>
+<script src="js/m4JS.js"></script>
