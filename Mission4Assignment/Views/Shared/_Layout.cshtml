@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width" />
     <meta charset="utf-8" />
     <title>@ViewData["Title"]</title>
-    <link href="css/Styles.css" rel="stylesheet" />
-    <link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="/css/Styles.css" rel="stylesheet" />
+    <link href="/lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
     <link rel="icon" type="image/x-icon" href="/img/200-2009388_survey-corps-scout-regiment-scout-legion-attack-on.png" />
 </head>
 <body>
@@ -17,9 +17,31 @@
     <div>
         @RenderBody()
     </div>
+    <!--Bootstrap footer for the page that has some contact info-->
+
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-8 col-sm-12">
+                    <h6 class="text-uppercase font-weight-bold">Additional Information</h6>
+                    <p>I have never used javascript before this so it was a really interesting learning experiance</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                <h6 class="text-uppercase font-weight-bold">Contact</h6>
+                <p>
+                    Bellevue, WA
+                    <br />IG: c.vzh
+                    <br />123-456-7890
+                </p>
+            </div>
+        </div>
+        <div class="footer-copyright text-center">© 2023 Copyright: ISISCOOL.com</div>
+    </footer>
 
     <!--Scripts-->
-    <script src="lib/jquery/jquery-3.6.3.min.js"></script>
-    <script src="js/m4JS.js"></script>
+    <script src="/lib/jquery/jquery-3.6.3.min.js"></script>
+    <script src="/js/m4JS.js"></script>
 </body>
 </html>
