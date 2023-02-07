@@ -7,6 +7,8 @@ namespace Mission4Assignment.Models
     {
         // Initializes all grade category variables
         // Initializes getters and setter as well
+
+        //Requires that the number inputted is between 0 and 100 for each input
         [Required(ErrorMessage = "Assignment Grade is Required")]
         [Range(0, 100, ErrorMessage = "Assignment Grade must be between 0 and 100")]
         public double assignmentsGrade { get; set; }

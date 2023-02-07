@@ -15,12 +15,12 @@ namespace Mission4Assignment.Controllers
             return View();
         }
 
-        [HttpGet]
+        [HttpGet] // Designates this view for the get request (before form submit)
         public IActionResult gradeCalc() {
             return View();
         }
 
-        [HttpPost]
+        [HttpPost] // Designates this view for the post request (from form submit)
         public IActionResult gradeCalc(gradeCalcModel model)
         {
             return View();

@@ -6,13 +6,16 @@
 
 }
 
-@model gradeCalcModel; 
+@model gradeCalcModel;
+
+<!--^^ Loads the model so that the variables from the form can be stored for validation Testing-->
 
 <h2>Grade Calculator v3</h2>
 <h4>Please input in integer form (Ex: 86% = 86)</h4>
 
 <!--Using same format as displaying the final grade put the input validation error here-->
 <p id="inputValidation" style="color : red"></p>
+<!--POST form that stores the variables in the model using the asp-for stuff-->
 <form method="post">
     <label>Assignments - 50%</label>
     <input id="assignments" asp-for="assignmentsGrade" /> <br />
@@ -36,5 +39,6 @@
 <h2>FINAL GRADE:</h2>
 <h4 id="finalGrade" asp-for="letterGrade"></h4>
 
+<!--Loads the java script and jquery for the page-->
 <script src="lib/jquery/jquery-3.6.3.min.js"></script>
 <script src="js/m4JS.js"></script>
