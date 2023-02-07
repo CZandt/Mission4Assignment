@@ -1,6 +1,9 @@
-﻿$('#calculateGrade').click(function () {
-    
-    // Grabs the values from the from
+﻿
+$('#calculateGrade').click(function () {
+
+    let inputValidation;
+    inputValidation = true;
+
     let assignments = parseFloat($('#assignments').val());
 
     let quizzes = parseFloat($('#quizzes').val());
@@ -13,9 +16,9 @@
 
     let finalGrade;
     // performs the math and gets the final grade
-    finalGrade = ((assignments * 0.5) + (quizzes * 0.1) + (groupProjects * 0.1) + (intex * 0.1) + (exam * 0.2)) * 100;
+    finalGrade = (((assignments / 100) * 0.5) + ((quizzes / 100) * 0.1) + ((groupProjects / 100) * 0.1) + ((intex / 100) * 0.1) + ((exam / 100) * 0.2)) * 100;
 
-    let letterGrade;
+    
 
     // determines what letter grade a person gets based on the final grade variable
     // Mission 5 Changes
@@ -44,7 +47,8 @@
     } else {
         letterGrade = "E";
     }
-
-    // displays the final grade in the HTML
     $('#finalGrade').html(letterGrade);
+
+    alert("Final Grade: " + letterGrade);
 })
+// displays the final grade on load

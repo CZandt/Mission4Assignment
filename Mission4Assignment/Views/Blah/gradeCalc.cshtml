@@ -3,33 +3,38 @@
 *@
 @{
     ViewData["Title"] = "Mission 5 Grade Calculator";
+
 }
 
-<h2>Grade Calculator v2</h2>
-<h4>Please input in decimal form (Ex: 0.86)</h4>
+@model gradeCalcModel; 
 
-<form>
+<h2>Grade Calculator v3</h2>
+<h4>Please input in integer form (Ex: 86% = 86)</h4>
+
+<!--Using same format as displaying the final grade put the input validation error here-->
+<p id="inputValidation" style="color : red"></p>
+<form method="post">
     <label>Assignments - 50%</label>
-    <input id="assignments" /> <br />
+    <input id="assignments" asp-for="assignmentsGrade" /> <br />
 
     <label>Quizzes - 10%</label>
-    <input id="quizzes" /> <br />
+    <input id="quizzes" asp-for="quizzesGrade" /> <br />
 
     <label>Group Projects - 10%</label>
-    <input id="groupProjects" /> <br />
+    <input id="groupProjects" asp-for="groupProjectsGrade"/> <br />
 
     <label>INTEX - 10%</label>
-    <input id="intex" /> <br />
+    <input id="intex" asp-for="intexGrade"/> <br />
 
     <label>Exams (Midterm and Final) - 20%</label>
-    <input id="exams" /> <br />
+    <input id="exams" asp-for="examsGrade"/> <br />
 
-    <input id="calculateGrade" type="button" value="Calculate Grade" />
+    <input id="calculateGrade" type="submit" value="Calculate Grade" />
 </form>
-
+<div asp-validation-summary="All"></div>
 <!-- Shows the final grade in the html-->
 <h2>FINAL GRADE:</h2>
-<h4 id="finalGrade"></h4>
+<h4 id="finalGrade" asp-for="letterGrade"></h4>
 
 <script src="lib/jquery/jquery-3.6.3.min.js"></script>
 <script src="js/m4JS.js"></script>
